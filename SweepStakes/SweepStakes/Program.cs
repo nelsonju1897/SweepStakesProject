@@ -10,12 +10,22 @@ namespace SweepStakes
     {
         static void Main(string[] args)
         {
-            //Contestant contestant = new Contestant();
-            //contestant.displayContestantInfo();
-
-            MarketingFirm mf = new MarketingFirm();
-            mf.MakeSweepstakesManager();
-            mf.MakeSweepstake();
+          
+            string managerType = UserInterface.ChooseStackOrQueue();
+            ISweepstakesManager manager;
+            if (managerType == "stack")
+            {
+                manager = new SweepstakesStackManager();
+            }
+            else if (managerType == "queue")
+            {
+                manager = new SweepstakesQueueManager();
+            }
+            else
+            {
+                return;
+            }
+           
         }
     }
 }

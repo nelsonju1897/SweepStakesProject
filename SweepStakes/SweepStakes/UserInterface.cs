@@ -68,5 +68,10 @@ namespace SweepStakes
             return choice;
         }
 
+        public static string DisplayWinner()
+        {
+
+        }
+
     }
 }
