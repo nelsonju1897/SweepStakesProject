@@ -10,8 +10,12 @@ namespace SweepStakes
     {
         static void Main(string[] args)
         {
-            Contestant contestant = new Contestant();
-            contestant.displayContestantInfo();
+            //Contestant contestant = new Contestant();
+            //contestant.displayContestantInfo();
+
+            MarketingFirm mf = new MarketingFirm();
+            mf.MakeSweepstakesManager();
+            mf.MakeSweepstake();
         }
     }
 }

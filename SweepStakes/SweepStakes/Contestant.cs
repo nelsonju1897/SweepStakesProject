@@ -25,7 +25,7 @@ namespace SweepStakes
 
         //member methods
 
-        public void displayContestantInfo()
+        public void DisplayContestantInfo()
         {
             Console.WriteLine(firstName);
             Console.WriteLine(lastName);

@@ -40,5 +40,33 @@ namespace SweepStakes
             Console.WriteLine("Your registration number is " + registratrationNumber);
             return registratrationNumber;
         }
+
+        public static string ChooseStackOrQueue()
+        {
+            
+            while (true)
+            {
+                Console.WriteLine("Do you want to stack or queue your sweepstakes? Type: Stack or Queue.");
+                string choice = Console.ReadLine();
+                
+                if (choice.ToLower() == "stack" || choice.ToLower() == "queue")
+                {
+                    return choice;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect choice entered.");
+                }
+            }
+            
+        }
+
+        public static string ChooseSweepstakesName()
+        {
+            Console.WriteLine("What do you want to name your Sweepstakes?");
+            string choice = Console.ReadLine();
+            return choice;
+        }
+
     }
 }

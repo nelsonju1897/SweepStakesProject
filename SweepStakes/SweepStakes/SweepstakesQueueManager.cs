@@ -10,6 +10,7 @@ namespace SweepStakes
     {
         //member variables
         Queue<Sweepstakes> sweepstakesQueue;
+
         //constructor
         public SweepstakesQueueManager()
         {
