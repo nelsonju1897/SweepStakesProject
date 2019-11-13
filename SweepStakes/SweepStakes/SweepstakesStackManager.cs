@@ -9,18 +9,22 @@ namespace SweepStakes
     public class SweepstakesStackManager : ISweepstakesManager
     {
         //member variables
-
+        Stack<Sweepstakes> sweepstakesStack;
         //constructor
-
+        public SweepstakesStackManager()
+        {
+            sweepstakesStack = new Stack<Sweepstakes>();
+        }
         //member methods
         public Sweepstakes GetSweepstakes()
         {
-            throw new NotImplementedException();
+            Sweepstakes sweepstakes = sweepstakesStack.Pop();
+            return sweepstakes;
         }
 
         public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
-            throw new NotImplementedException();
+            sweepstakesStack.Push(sweepstakes);
         }
     }
 }
