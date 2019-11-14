@@ -68,9 +68,9 @@ namespace SweepStakes
             return choice;
         }
 
-        public static string DisplayWinner()
+        public static void DisplayWinner(string contestant, string sweep)
         {
-
+            Console.WriteLine("The winner for " + sweep + " is " + contestant);    
         }
 
     }
